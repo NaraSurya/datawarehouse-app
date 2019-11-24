@@ -10,7 +10,7 @@ class Rekap_Jumlah_Pegawai_Controller extends Controller
 {
   
     public function bulanan(Request $request){
-        return Rekap_Jumlah_Pegawai_Bulanan:paginate($request->paginate);
+        return Rekap_Jumlah_Pegawai_Bulanan::paginate($request->paginate);
     }
 
     public function Tahunan(Request $request){

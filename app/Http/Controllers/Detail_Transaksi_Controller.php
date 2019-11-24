@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class Detail_Transaksi_Controller extends Controller
 {
     public function harian(Request $request){
-        return Detail_Transaksi_Harian:paginate($request->paginate);
+        return Detail_Transaksi_Harian::paginate($request->paginate);
     }
 
     public function bulanan(Request $request){
